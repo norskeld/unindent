@@ -1,7 +1,7 @@
 {
-  "name": "@nrsk/serpent",
+  "name": "@nrsk/unindent",
   "version": "1.0.0",
-  "description": "Yet another TypeScript library starter with conventional goodies and automatic semantic releases.",
+  "description": "Microlibrary for unindenting multiline strings.",
   "sideEffects": false,
   "type": "module",
   "main": "./index.cjs",
@@ -38,19 +38,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/norskeld/serpent.git"
+    "url": "git+https://github.com/norskeld/unindent.git"
   },
   "keywords": [
-    "starter",
-    "library",
+    "indent",
+    "unindent",
+    "strings",
+    "utility",
     "typescript",
-    "jest",
-    "eslint",
-    "prettier",
-    "husky",
-    "lint-staged",
-    "commitlint",
-    "semantic-release"
+    "javascript"
   ],
   "author": {
     "name": "Vladislav Mamon",
@@ -58,9 +54,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/norskeld/serpent/issues"
+    "url": "https://github.com/norskeld/unindent/issues"
   },
-  "homepage": "https://github.com/norskeld/serpent#readme",
+  "homepage": "https://github.com/norskeld/unindent#readme",
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@nrsk/config-conventional": "^1.0.0",

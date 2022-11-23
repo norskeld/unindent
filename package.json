@@ -41,7 +41,7 @@
     "url": "git+https://github.com/norskeld/unindent.git"
   },
   "keywords": [
-    "indent",
+    "indentation",
     "unindent",
     "strings",
     "utility",

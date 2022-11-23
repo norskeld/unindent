@@ -26,13 +26,15 @@ npm i @nrsk/sigma
 
 ### Deno
 
-You can import the library via Skypack (note that ?dts query parameter, that will pull types as well):
+You can import the library via [Skypack] (note that `?dts` query parameter, that will pull types as well):
 
 ```typescript
 import un from 'https://cdn.skypack.dev/@nrsk/unindent?dts'
 ```
 
 ## Usage
+
+This library exposes only one function as the default export, which can be used as a [tagged template][tt], or as ordinary unary function:
 
 ```typescript
 import un from '@nrsk/unindent'
@@ -46,10 +48,19 @@ const x = un`
     This line has the same indentation as the 1st line.
 `
 
-console.log(x)
+// Or...
+
+const x = un(`
+    Sup!
+
+      - this is indented
+      - this is indented too
+
+    This line has the same indentation as the 1st line.
+`)
 ```
 
-This will output (without 4 leading spaces):
+`x` will contain the following (without 4 leading spaces):
 
 ```text
 Sup!
@@ -60,14 +71,6 @@ Sup!
 This line has the same indentation as the 1st line.
 ```
 
-You can use it as an ordinary function too:
-
-```typescript
-import un from '@nrsk/unindent'
-
-const x = un(`...`)
-```
-
 ## License
 
 [MIT](LICENSE).
@@ -76,3 +79,5 @@ const x = un(`...`)
 
 [commitlint]: https://github.com/conventional-changelog/commitlint
 [semantic-release]: https://semantic-release.gitbook.io/semantic-release
+[skypack]: https://skypack.dev
+[tt]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#tagged_templates

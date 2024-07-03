@@ -20,16 +20,13 @@
     "*.cjs*",
     "*.js*"
   ],
-  "engines": {
-    "node": "^14.16.0 || ^16.10.0 || ^18.0.0"
-  },
   "scripts": {
     "build": "tsup",
     "fmt:lint": "eslint --fix --ext .js,.ts .",
     "fmt:prettier": "prettier --write \"**/*.{js,ts,json}\"",
     "postversion": "tsx ../.scripts/release.ts restore",
     "prebuild": "rimraf dist",
-    "prepare": "is-ci || husky install",
+    "prepare": "husky",
     "prerelease": "tsx .scripts/release.ts prepare",
     "release": "npx semantic-release",
     "release:dry": "npx semantic-release --dry-run",
@@ -50,7 +47,7 @@
   ],
   "author": {
     "name": "Vladislav Mamon",
-    "email": "hello@vm.codes"
+    "email": "hello@nrsk.dev"
   },
   "license": "MIT",
   "bugs": {
@@ -58,26 +55,26 @@
   },
   "homepage": "https://github.com/norskeld/unindent#readme",
   "devDependencies": {
-    "@commitlint/cli": "^17.2.0",
+    "@commitlint/cli": "^19.3.0",
     "@nrsk/config-conventional": "^1.0.0",
-    "@semantic-release/changelog": "^6.0.1",
+    "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "@types/is-ci": "^3.0.0",
-    "@typescript-eslint/eslint-plugin": "^5.42.0",
-    "@typescript-eslint/parser": "^5.42.0",
-    "@vitest/coverage-istanbul": "^0.24.5",
+    "@types/is-ci": "^3.0.4",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "@vitest/coverage-istanbul": "^1.6.0",
     "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
-    "husky": "^8.0.1",
+    "husky": "^9.0.11",
     "is-ci": "^3.0.1",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "rimraf": "^3.0.2",
-    "semantic-release": "^19.0.5",
-    "tsup": "^6.3.0",
-    "tsx": "^3.11.0",
-    "typescript": "^4.8.4",
-    "vitest": "^0.24.5"
+    "lint-staged": "^15.2.7",
+    "prettier": "^3.3.2",
+    "rimraf": "^5.0.7",
+    "semantic-release": "^24.0.0",
+    "tsup": "^8.1.0",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3",
+    "vitest": "^1.6.0"
   },
   "commitlint": {
     "extends": [

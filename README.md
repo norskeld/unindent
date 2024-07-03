@@ -8,7 +8,6 @@
 [![Build/Test](https://img.shields.io/github/actions/workflow/status/norskeld/unindent/test.yml?style=flat-square&colorA=22272d&colorB=22272d)](https://github.com/norskeld/unindent/actions 'Build and test workflows')
 [![NPM](https://img.shields.io/npm/v/@nrsk/unindent?style=flat-square&colorA=22272d&colorB=22272d)](https://npm.im/@nrsk/unindent 'This package on NPM')
 [![Coverage](https://img.shields.io/coverallsCoverage/github/norskeld/unindent?style=flat-square&colorA=22272d&colorB=22272d)](https://coveralls.io/github/norskeld/unindent 'Test coverage')
-[![Supported Node Versions](https://img.shields.io/static/v1?label=node&message=14+|+16+|+18&style=flat-square&colorA=22272d&colorB=22272d)](https://github.com/norskeld/sigma/blob/master/package.json#L35 'Supported Node versions')
 [![Semantic Release](https://img.shields.io/static/v1?label=semantic+release&message=✔&style=flat-square&colorA=22272d&colorB=22272d)](https://github.com/semantic-release/semantic-release 'This package uses semantic release to handle releasing, versioning, changelog generation and tagging')
 [![Conventional Commits](https://img.shields.io/static/v1?label=conventional+commits&message=✔&style=flat-square&colorA=22272d&colorB=22272d)](https://conventionalcommits.org 'This package follows the conventional commits spec and guidelines')
 
@@ -21,7 +20,7 @@ Microlibrary for unindenting multiline strings.
 Just use your favorite package manager:
 
 ```bash
-npm i @nrsk/sigma
+npm i @nrsk/unindent
 ```
 
 ### Deno

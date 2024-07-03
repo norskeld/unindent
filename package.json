@@ -1,6 +1,6 @@
 {
   "name": "@nrsk/unindent",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Microlibrary for unindenting multiline strings.",
   "sideEffects": false,
   "type": "module",
